@@ -1,0 +1,30 @@
+import java.util.*;
+class mark{
+  
+public static void main(String[] args){
+Scanner sc= new Scanner(System.in);
+Scanner sc1= new Scanner(System.in);
+System.out.println("THE MARKS ARE:::\t");
+System.out.println("TAMIL:");
+int num1 = sc.nextInt();
+System.out.println("ENGLISH:\t");
+int num2 = sc.nextInt();
+System.out.println("MATHS:\t");
+int num3 = sc.nextInt();
+System.out.println("SCIENCE:\t");
+int num4 = sc.nextInt();
+System.out.println(" SOCIAL SCIENCE:\t");
+int num5 = sc.nextInt();
+int TOT= num1+num2+num3+num4+num5;
+System.out.println("TOTAL:\t"+TOT);
+System.out.println("ENTER UR NAME:\t");
+String name = sc1.nextLine();
+System.out.println("THE name:\t"+name);
+System.out.println("TA:\t"+num1);
+System.out.println("ENG:\t"+num2);
+System.out.println("MATH:\t"+num1);
+System.out.println("SCI:\t"+num2);
+System.out.println("SS:\t"+num5);
+System.out.println("total:\t"+TOT);
+}
+}
