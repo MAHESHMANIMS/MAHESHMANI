@@ -1,0 +1,83 @@
+
+import java.util.*;
+class ATM {
+    public static void main(String[] args) {
+       int totamount=1000,a=0;
+       Scanner sc =new Scanner(System.in);
+       Scanner sc1 =new Scanner(System.in);
+       Scanner sc2 =new Scanner(System.in);
+       Scanner sc3 =new Scanner(System.in);
+       while(true)
+       {
+           System.out.println("THIS UR ATM MONEY FROM ANYWHERE");
+           System.out.println("1) MONEY WITHDRAWL");
+           System.out.println("2) MONEY DEPOSITE");
+           System.out.println("3) BEALANCE ENQUIRY");
+           System.out.println("4) EXIT");
+       int option =sc.nextInt();
+      // int withdrawl =sc2.nextInt();
+       //int deposite =sc3.nextInt();
+       switch(option)
+       {
+           case 1:
+               System.out.println("MONEY WITHDRAWL PROCESS WAS SELECTED\n");
+               System.out.println("YOUR CURRENT MONEY\n"+totamount);
+               System.out.println("PLEACE ENTER YOUR PASSWARD:\t");
+               int pw =sc1.nextInt();
+               a=pw;
+               if(a==1234)
+               {
+               System.out.println("****"+"PASSWARD VERIFIED SUCCEFULLY\n");
+               System.out.println("ENTER AMOUNT TO BE WITHDRAL\n");
+               int withdrawl =sc2.nextInt();
+               System.out.println(withdrawl+"\t amount will be withdral succesfully!!!!!\n");
+               totamount=totamount-withdrawl;
+               System.out.println("YOUR CURRENT BALANCE WILL BE\n"+totamount);
+              
+               }
+               else
+               System.out.println("PASSWARD INCORRECT \n CHEAK YOUR PASSWARD\t");
+               break;
+               case 2:
+                   System.out.println("MONEY DEPOSITE WAS SELECTED\n");
+                   System.out.println("YOUR CURRENT MONEY\n"+totamount);
+                   System.out.println("PLEACE ENTER YOUR PASSWARD:\t");
+                   pw =sc1.nextInt();
+                   a=pw;
+                   if(a==1234)
+                   {
+                   System.out.println("****"+"PASSWARD VERIFIED SUCCEFULLY\n");
+                   System.out.println("ENTER AMOUNT TO BE deposite\n");
+                   int deposite =sc3.nextInt();
+                   System.out.println(deposite+"\tamount will be deposite succesfully!!!!!");
+                   totamount=totamount+deposite;
+                   System.out.println("YOUR CURRENT BALANCE WILL BE\n"+totamount);
+                
+                   }
+                   else
+                   System.out.println("PASSWARD INCORRECT \n CHEAK YOUR PASSWARD\t");
+                   break;
+                   
+                   case 3:
+                       System.out.println("BEALANCE ENQUIRY  PROCESS WAS SELECTED");
+                       System.out.println("PLEACE ENTER YOUR PASSWARD:\t");
+                   	pw =sc1.nextInt();
+                   	a=pw;
+                   	if(a==1234)
+                   	{
+                   	System.out.println("****"+"PASSWARD VERIFIED SUCCEFULLY\n");
+                       System.out.println("YOUR CURRENT BALANCE WILL BE"+totamount);
+                
+                       }
+
+                       else
+                       System.out.println("PASSWARD INCORRECT \n CHEAK YOUR PASSWARD\t");
+                       break;
+                       case 4:
+                          System.out.println("THANK YOU FOR WISIT\t");
+                           System.exit(0);
+                           break;
+         }
+       }
+    }
+}
