@@ -1,0 +1,19 @@
+import java.util.Scanner;  
+public class ArrayInputExample1   
+{  
+public static void main(String[] args)   
+{  
+Scanner sc = new Scanner(System.in);
+System.out.println("ENTER NUMBER OF ARRAY");
+int n = sc.nextInt();
+System.out.println("ENTER ARRAY ELEMENTS");
+int numbers[] = new int[10];
+for(int i=0;i<n;i++)
+{
+numbers[i] =sc.nextInt();
+
+}
+                                                    //ARRAY USER INPUT..........
+}
+}
+
