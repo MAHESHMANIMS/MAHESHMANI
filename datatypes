@@ -1,0 +1,14 @@
+
+import java.lang.Integer.*;
+class number {
+    public static void main(String[] args) {
+        System.out.println("Size of int: " + Byte.BYTES + " byts");
+        System.out.println("Size of int: " + Short.BYTES + " byts");
+        System.out.println("Size of int: " + Integer.BYTES + " byts");
+         System.out.println("Size of int: " + Long.BYTES + " byts");
+         System.out.println("Size of int: " + Float.BYTES + " byts");
+         System.out.println("Size of int: " + Double.BYTES + " byts");
+          
+
+    }
+}
